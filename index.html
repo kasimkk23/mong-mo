@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title">Mong Mo – Vegane Vietnamesische Küche</title>
+<meta name="description" content="Mong Mo – vegane vietnamesische Küche. Frisch, pflanzlich, authentisch. Jetzt Tisch reservieren." data-i18n-attr="content:meta.description">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%2334422b'/%3E%3Ctext x='50' y='66' font-size='55' text-anchor='middle' fill='%23e7ebda'%3E%F0%9F%8C%B1%3C/text%3E%3C/svg%3E">
+<!-- Fonts are self-hosted (assets/fonts/) instead of loaded from Google's CDN —
+     no third-party font request, faster (no extra DNS/TLS handshake), and it
+     sidesteps the EU/GDPR debate around Google Fonts entirely. -->
+<link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/playfair-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main" data-i18n="skip.link">Zum Inhalt springen</a>
+
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="#top" class="logo">Mong Mo</a>
+
+    <div class="header-actions">
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#about" data-i18n="nav.about">Über uns</a></li>
+          <li><a href="#gallery" data-i18n="nav.gallery">Galerie</a></li>
+          <li><a href="#menu" data-i18n="nav.menu">Speisekarte</a></li>
+          <li><a href="#reservation" data-i18n="nav.reservation">Reservieren</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Kontakt</a></li>
+        </ul>
+        <a href="#reservation" class="btn btn-accent nav-cta" data-i18n="nav.cta">Tisch reservieren</a>
+      </nav>
+
+      <div class="lang-switch-wrap">
+        <label class="visually-hidden" for="langSwitch" data-i18n="lang.switchLabel">Sprache</label>
+        <select id="langSwitch" class="lang-switch">
+          <option value="de">🇩🇪 DE</option>
+          <option value="en">🇬🇧 EN</option>
+          <option value="fr">🇫🇷 FR</option>
+          <option value="it">🇮🇹 IT</option>
+          <option value="es">🇪🇸 ES</option>
+          <option value="pl">🇵🇱 PL</option>
+        </select>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" data-i18n-attr="aria-label:nav.toggleLabel" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-blob" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Vegane vietnamesische Küche</p>
+        <h1>Mong Mo</h1>
+        <p class="hero-text" data-i18n="hero.text">Frische Kräuter, hausgemachte Saucen und pflanzliche Klassiker der vietnamesischen Küche –
+          neu gedacht, ganz ohne tierische Produkte.</p>
+        <div class="hero-actions">
+          <a href="#reservation" class="btn btn-accent" data-i18n="hero.bookBtn">Tisch reservieren</a>
+          <a href="#menu" class="btn btn-outline" data-i18n="hero.menuBtn">Speisekarte ansehen</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img
+          src="assets/photos/interior-neon-sign.webp"
+          alt="Gemütlicher Gastraum von Mong Mo mit dem beleuchteten „Mông Mơ"-Schild"
+          fetchpriority="high"
+          decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="about-visual" aria-hidden="true">
+        <div class="about-circle">🌱</div>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow" data-i18n="about.eyebrow">Unsere Küche</p>
+        <h2 data-i18n="about.title">100% pflanzlich, 100% Vietnam</h2>
+        <p data-i18n="about.text">Bei Mong Mo verbinden wir traditionelle vietnamesische Rezepte mit veganen Zutaten – von
+          Glasnudelsuppe über frische Sommerrollen bis zu würzigen Spezialitäten mit Zitronengras und Chili.
+          Alle Gerichte werden täglich frisch zubereitet, mit viel Koriander, Limette und hausgemachten Saucen.</p>
+        <ul class="about-points">
+          <li data-i18n="about.point1">Frische Kräuter &amp; Gemüse</li>
+          <li data-i18n="about.point2">Hausgemachte Saucen</li>
+          <li data-i18n="about.point3">100% pflanzliche Zutaten</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <p class="eyebrow center" data-i18n="gallery.eyebrow">Impressionen</p>
+      <h2 class="center" data-i18n="gallery.title">Ein Blick auf Mong Mo</h2>
+
+      <div class="gallery-grid">
+        <button type="button" class="gallery-item gallery-item-wide">
+          <img src="assets/photos/dish-noodles-hero.webp" alt="Gebratene Nudeln mit Gemüse, Tofu und knusprigen Röstzwiebeln" loading="lazy" decoding="async">
+        </button>
+        <button type="button" class="gallery-item">
+          <img src="assets/photos/interior-bar-lounge.webp" alt="Heller Gastraum von Mong Mo mit Sektgläsern und Blumen an der Bar" loading="lazy" decoding="async">
+        </button>
+        <button type="button" class="gallery-item">
+          <img src="assets/photos/dish-buncha-closeup.webp" alt="Bún Chả Bowl mit Frühlingsrollen, Erdnüssen und frischen Kräutern" loading="lazy" decoding="async">
+        </button>
+        <button type="button" class="gallery-item">
+          <img src="assets/photos/dessert-matcha-tiramisu.webp" alt="Matcha-Tiramisu mit Eistee auf dem Tisch" loading="lazy" decoding="async">
+        </button>
+        <button type="button" class="gallery-item">
+          <img src="assets/photos/interior-corner-seating.webp" alt="Gemütliche Sitzecke mit Pflanzen am Fenster" loading="lazy" decoding="async">
+        </button>
+        <button type="button" class="gallery-item gallery-item-wide">
+          <img src="assets/photos/dish-buncha-bowls.webp" alt="Zwei Bún Chả Bowls mit Bier und hausgemachter Limonade auf der Terrasse" loading="lazy" decoding="async">
+        </button>
+        <button type="button" class="gallery-item">
+          <img src="assets/photos/drink-coffee-flight.webp" alt="Auswahl an vietnamesischem Eiskaffee" loading="lazy" decoding="async">
+        </button>
+        <button type="button" class="gallery-item">
+          <img src="assets/photos/dish-small-plates.webp" alt="Verschiedene Vorspeisen: Tofu, Bánh Cuốn, Pak Choi und Frühlingsrollen" loading="lazy" decoding="async">
+        </button>
+        <button type="button" class="gallery-item">
+          <img src="assets/photos/dessert-pandan-waffle.webp" alt="Pandan-Waffel mit Espresso" loading="lazy" decoding="async">
+        </button>
+        <button type="button" class="gallery-item gallery-item-wide">
+          <img src="assets/photos/dish-noodles-drinks.webp" alt="Gebratene Nudeln mit frisch gepresstem Saft und Chilisauce" loading="lazy" decoding="async">
+        </button>
+      </div>
+    </div>
+
+    <!-- Lightbox modal for gallery photos -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <div class="lightbox-backdrop" data-lightbox-close></div>
+      <div class="lightbox-content" role="dialog" aria-modal="true" aria-label="Bildansicht">
+        <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Schließen" data-i18n-attr="aria-label:lightbox.close">&times;</button>
+        <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Vorheriges Bild" data-i18n-attr="aria-label:lightbox.prev">&#8249;</button>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="">
+        <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Nächstes Bild" data-i18n-attr="aria-label:lightbox.next">&#8250;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <p class="eyebrow center" data-i18n="menu.eyebrow">Speisekarte</p>
+      <h2 class="center" data-i18n="menu.title">Eine Auswahl unserer Gerichte</h2>
+      <p class="section-lead center" data-i18n="menu.lead">Von Vorspeisen bis Dessert – hier ist unsere komplette Karte.</p>
+
+      <!-- Top-level categories -->
+      <div class="menu-cats" role="tablist" aria-label="Menübereiche" data-i18n-attr="aria-label:menu.catsLabel">
+        <button class="menu-cat-tab is-active" role="tab" aria-selected="true" data-cat-target="cat-vorspeisen" data-i18n="menu.cat.vorspeisen">Vorspeisen &amp; Tapas</button>
+        <button class="menu-cat-tab" role="tab" aria-selected="false" data-cat-target="cat-hauptspeisen" data-i18n="menu.cat.hauptspeisen">Hauptspeisen</button>
+        <button class="menu-cat-tab" role="tab" aria-selected="false" data-cat-target="cat-mittagskarte" data-i18n="menu.cat.mittagskarte">Mittagskarte</button>
+        <button class="menu-cat-tab" role="tab" aria-selected="false" data-cat-target="cat-getraenke" data-i18n="menu.cat.getraenke">Getränke</button>
+        <button class="menu-cat-tab" role="tab" aria-selected="false" data-cat-target="cat-nachtisch" data-i18n="menu.cat.nachtisch">Nachtisch</button>
+      </div>
+
+      <!-- ===================== VORSPEISEN & TAPAS ===================== -->
+      <div class="menu-cat-panel is-active" id="cat-vorspeisen">
+
+        <p class="menu-note" data-i18n="menu.note.vorspeisenPricing">Reisschüssel klein +2&nbsp;€ · groß +5&nbsp;€ &nbsp;|&nbsp; Kleine Gerichte je 5&nbsp;€ · Spezialitäten je 7&nbsp;€</p>
+
+        <div class="menu-tabs" role="tablist" aria-label="Menükategorien" data-i18n-attr="aria-label:menu.tabsLabel">
+          <button class="menu-tab is-active" role="tab" aria-selected="true" data-target="suppen" data-i18n="menu.tab.suppen">Suppen</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-target="snacks" data-i18n="menu.tab.snacks">Snacks</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-target="haeppchen" data-i18n="menu.tab.haeppchen">Kleine Häppchen</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-target="gerichte" data-i18n="menu.tab.gerichte">Kleine Gerichte</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-target="spezialitaeten" data-i18n="menu.tab.spezialitaeten">Spezialitäten</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-target="teilen" data-i18n="menu.tab.teilen">Zum Teilen</button>
+        </div>
+
+        <div class="menu-panels">
+
+          <div class="menu-panel is-active" id="suppen" role="tabpanel">
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.s1b.title">1b. Glasnudelsuppe</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.s1b.desc">Mit Gemüse, Morcheln, Shiitake &amp; Koriander</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.s1c.title">1c. Tom Kha Tofu</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.s1c.desc">Kokosnusssuppe mit Tofu &amp; Koriander</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.s1d.title">1d. Wantansuppe</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.s1d.desc">Mit Gemüse &amp; Koriander</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.s1e.title">1e. Miso Suppe</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.s1e.desc">Sojabohnenbrühe mit Tofu &amp; Algen</p></article>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="snacks" role="tabpanel" hidden>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.n7a.title">7a. Edamame</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.n7a.desc">Mit Meersalz</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.n7b.title">7b. Mangosalat</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.n7b.desc">Mit Minze, Koriander &amp; Erdnüssen</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.n7c.title">7c. Avocadosalat</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.n7c.desc">Mit Minze, Koriander &amp; Sesam</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.n7d.title">7d. Frittierter Tofu</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.n7d.desc">Mit hausgemachter Sauce</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.n7e.title">7e. Süßkartoffel-Pommes</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.n7e.desc">Mit hausgemachter Süß-Sauer-Sauce</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.n7f.title">7f. Glasnudelsalat</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.n7f.desc">Mit Sellerie, frischem Koriander &amp; Sesam</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.n7g.title">7g. Kimchi</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.n7g.desc">Scharf eingelegter Chinakohl</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.n7h.title">7h. Wakame</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.n7h.desc">Algensalat</p></article>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="haeppchen" role="tabpanel" hidden>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.h2a.title">2a. Vietnamesische Frühlingsrollen (2 Stk.)</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.h2a.desc">Gefüllt mit Tofu, Gemüse &amp; Morcheln</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.h2b.title">2b. Mini-Frühlingsrollen (7 Stk.)</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.h2b.desc">Gefüllt mit Gemüse</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.h3.title">3. Sommerrollen (2 Stk.)</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.h3.desc">Frische Rollen mit Salat, Koriander, Erdnüssen &amp; Limettensauce</p><p class="menu-item-variants" data-i18n="menu.note.sommerrollen">3a. Mit Tofu · 3b. Mit Avocado · 3c. Mit Tofu &amp; Avocado</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.h4.title">4. Frittierte Wantan (4 Stk.)</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.h4.desc">Glasnudeln, Tofu, Shiitake, hausgemachte Süß-Sauer-Sauce</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.h5.title">5. Gemüse Ha Cao (4 Stk.)</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.h5.desc">Gedämpfte Dumplings mit hausgemachter Sauce</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.h6.title">6. Bánh Bao (herzhaft) (1 Stk.)</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.h6.desc">Gedämpfte Hefeteigtasche, gefüllt mit Glasnudeln, Morcheln &amp; Tofu</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.h8.title">8. Xiu Mai (3 Stk.)</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.h8.desc">Tofubällchen mit Pilzen in Tomatensauce</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.h9.title">9. Cha La Lot (4 Stk.)</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.h9.desc">Tofubällchen mit Pilzen in Betelblättern</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.h10.title">10. Tôm chiên Xu (3 Stk.)</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.h10.desc">Knusprige vegane Garnelen</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.h11.title">11. Mini Hähnchenkeulen (2 Stk.)</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.h11.desc">Aus Seitan, hausgemachte Süß-Sauer-Sauce</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.h12.title">12. Bánh Trôi (3 Stk.)</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.h12.desc">Reisbällchen gefüllt mit Mungbohnen in würziger Sojasauce</p></article>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="gerichte" role="tabpanel" hidden>
+            <p class="menu-note" data-i18n="menu.note.gerichte">Wahlweise mit Tofu, veganem Rindfleisch oder veganem Hühnerfleisch (+2&nbsp;€)</p>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.g36.title">36. Kohlrabi mit Tomaten</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.g36.desc">Mit Knoblauch &amp; frischem Koriander</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.g37.title">37. Pak Choi &amp; Shiitake</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.g37.desc">Mit Knoblauch &amp; frischem Koriander</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.g38.title">38. Stangenbohnen mit Brokkoli</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.g38.desc">Mit Knoblauch &amp; frischem Koriander</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.g39.title">39. Stangenbohnen mit Sellerie</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.g39.desc">Mit Knoblauch &amp; frischem Koriander</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.g41.title">41. Rau Muống</span> <span class="menu-item-price">5&nbsp;€</span></h3><p data-i18n="item.g41.desc">Wasserspinat mit Knoblauch &amp; Koriander (nur im Sommer)</p></article>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="spezialitaeten" role="tabpanel" hidden>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.sp30.title">30. Đậu Phụ Chiên Sốt Cà Chua</span> <span class="menu-item-price">7&nbsp;€</span></h3><p data-i18n="item.sp30.desc">Frittierter Tofu in Tomatensauce mit Pilzen &amp; Koriander</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.sp33.title">33. Hoành Thánh Sốt Cà Chua</span> <span class="menu-item-price">7&nbsp;€</span></h3><p data-i18n="item.sp33.desc">Wantan in Tomatensoße &amp; Koriander</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.sp34.title">34. Đậu Phụ Nhồi</span> <span class="menu-item-price">7&nbsp;€</span></h3><p data-i18n="item.sp34.desc">Gefüllter Tofu mit Glasnudeln &amp; Pilzen in Tomatensauce</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.sp55.title">55. Sườn Sả Ớt</span> <span class="menu-item-price">7&nbsp;€</span></h3><p data-i18n="item.sp55.desc">Würzige vegane Stücke mit Zitronengras &amp; Chili</p></article>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="teilen" role="tabpanel" hidden>
+            <div class="menu-grid menu-grid-wide">
+              <article class="menu-item"><h3><span data-i18n="item.t2.title">Für 2 Personen</span> <span class="menu-item-price">30&nbsp;€</span></h3><p data-i18n="item.t2.desc">Sommerrollen · Edamame · Süß-Sauer-Tofu · Kohlrabi mit Tomate · Mini Hähnchenkeulen · Reis · Nachtisch: Xôi Xoài (Klebreis mit Mango)</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.t4.title">Für 4 Personen</span> <span class="menu-item-price">60&nbsp;€</span></h3><p data-i18n="item.t4.desc">Mangosalat · Edamame · Sommerrollen · Frittierte Wantan · Süß-Sauer-Tofu · Xiu Mai · Mini Frühlingsrollen · Mini Hähnchenkeulen · Tôm Chiên Xù · Tofu mit Curry · Reis · Nachtisch: Xôi Xoài &amp; frittierte Banane</p></article>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="allergen-note" data-i18n="menu.allergen">Allergene: 1 Glutenhaltiges Getreide · 2 Erdnüsse · 3 Soja · 4 Schalenfrüchte · 5 Sellerie · 6 Sesam — bitte sprechen Sie unser Team bei Unverträglichkeiten an.</p>
+      </div>
+
+      <!-- ===================== HAUPTSPEISEN ===================== -->
+      <div class="menu-cat-panel" id="cat-hauptspeisen" hidden>
+
+        <div class="menu-tabs" role="tablist" aria-label="Hauptspeisen-Kategorien">
+          <button class="menu-tab is-active" role="tab" aria-selected="true" data-target="nudelsuppen" data-i18n="menu.tab.nudelsuppen">Nudelsuppen</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-target="nudelnreis" data-i18n="menu.tab.nudelnreis">Gebratene Nudeln &amp; Reis</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-target="klassiker" data-i18n="menu.tab.klassiker">Klassiker</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-target="bowls" data-i18n="menu.tab.bowls">Bowls</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-target="hausspezial" data-i18n="menu.tab.hausspezial">Hausspezialitäten</button>
+        </div>
+
+        <div class="menu-panels">
+
+          <div class="menu-panel is-active" id="nudelsuppen" role="tabpanel">
+            <p class="menu-note" data-i18n="menu.note.nudelsuppen">Wahlweise mit: a. Tofu / b. veganem Rind / c. veganem Huhn</p>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.n25.title">25. Phở</span> <span class="menu-item-price">10,90&nbsp;€</span></h3><p data-i18n="item.n25.desc">Reisbandnudelsuppe mit Gemüsebrühe, Pilzen, Sojasprossen &amp; Koriander</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.n26.title">26. Miến Nước</span> <span class="menu-item-price">13,50&nbsp;€</span></h3><p data-i18n="item.n26.desc">Glasnudelsuppe mit Gemüsebrühe, Pilzen, Sojasprossen &amp; Koriander</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.n27.title">27. Udon Nước</span> <span class="menu-item-price">13,50&nbsp;€</span></h3><p data-i18n="item.n27.desc">Udonnudelsuppe mit Tomate, Ananas, Sellerie &amp; Koriander</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.n28.title">28. Bún Nước</span> <span class="menu-item-price">13,50&nbsp;€</span></h3><p data-i18n="item.n28.desc">Reisfadennudelsuppe mit Tomate, Ananas, Sellerie &amp; Koriander</p></article>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="nudelnreis" role="tabpanel" hidden>
+            <p class="menu-note" data-i18n="menu.note.nudelnreis">Wahlweise mit: a. Tofu / b. veganem Rind / c. veganem Huhn / d. knuspriger veganer Ente (+2,50&nbsp;€)</p>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.f19.title">19. Udon Xào</span> <span class="menu-item-price">13,50&nbsp;€</span></h3><p data-i18n="item.f19.desc">Gebratene Udonnudeln mit Gemüse &amp; Koriander</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.f20.title">20. Miến Xào</span> <span class="menu-item-price">13,50&nbsp;€</span></h3><p data-i18n="item.f20.desc">Gebratene Glasnudeln mit Gemüse &amp; Koriander</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.f21.title">21. Phở Xào</span> <span class="menu-item-price">13,50&nbsp;€</span></h3><p data-i18n="item.f21.desc">Gebratene Reisbandnudeln mit Gemüse &amp; Koriander</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.f22.title">22. Cơm Rang</span> <span class="menu-item-price">11,50&nbsp;€</span></h3><p data-i18n="item.f22.desc">Gebratener Reis mit Gemüse &amp; Röstzwiebeln</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.f23.title">23. Mì Xào</span> <span class="menu-item-price">11,50&nbsp;€</span></h3><p data-i18n="item.f23.desc">Gebratene Weizennudeln mit Gemüse &amp; Röstzwiebeln</p></article>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="klassiker" role="tabpanel" hidden>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.k13.title">13. Udon in Sauce nach Wahl</span> <span class="menu-item-price">13,50&nbsp;€</span></h3><p data-i18n="item.k13.desc">Udonnudeln direkt in Sauce gegart mit Gemüse &amp; frischem Koriander</p><p class="menu-item-variants" data-i18n="menu.note.sauceOptions">Saucen: Erdnuss · Mango · Curry (rot) · Süß-Sauer (hausgemacht) · Dunkle Soße</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.k32.title">32. Gebratenes Gemüse</span> <span class="menu-item-price">12,50&nbsp;€</span></h3><p data-i18n="item.k32.desc">Mit Sauce nach Wahl, dazu Reis</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.k18.title">18. Miến Trộn</span> <span class="menu-item-price">13,50&nbsp;€</span></h3><p data-i18n="item.k18.desc">Glasnudelsalat mit Gemüse und Sellerie, frischem Koriander &amp; Sesam</p></article>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="bowls" role="tabpanel" hidden>
+            <p class="menu-note"><strong data-i18n="bowls.price">13,50&nbsp;€</strong> — <span data-i18n="bowls.intro">mit Salatmix, Avocado, Gemüse und frischem Koriander. Stelle dir deine Bowl zusammen:</span></p>
+            <div class="bowl-builder">
+              <div class="bowl-column">
+                <h4 data-i18n="bowls.protein">Protein</h4>
+                <ul>
+                  <li data-i18n="item.bowl14.title">14. Veganes Rind</li>
+                  <li data-i18n="item.bowl15.title">15. Veganes Huhn</li>
+                  <li data-i18n="item.bowl17.title">17. Tofu</li>
+                </ul>
+              </div>
+              <div class="bowl-plus" aria-hidden="true">+</div>
+              <div class="bowl-column">
+                <h4 data-i18n="bowls.basis">Basis</h4>
+                <ul>
+                  <li data-i18n="bowls.basisA">a. Udon &amp; Sesam</li>
+                  <li data-i18n="bowls.basisB">b. Bún (Reisfadennudeln) &amp; Erdnuss</li>
+                  <li data-i18n="bowls.basisC">c. Phở (Reisbandnudeln) &amp; Erdnuss</li>
+                  <li data-i18n="bowls.basisD">d. Reis &amp; Sesam</li>
+                </ul>
+              </div>
+              <div class="bowl-plus" aria-hidden="true">+</div>
+              <div class="bowl-column">
+                <h4 data-i18n="bowls.sauce">Sauce</h4>
+                <ul>
+                  <li data-i18n="bowls.sauce1">Erdnuss</li>
+                  <li data-i18n="bowls.sauce2">Curry (rot)</li>
+                  <li data-i18n="bowls.sauce3">Mango</li>
+                  <li data-i18n="bowls.sauce4">Süß-Sauer (hausgemacht)</li>
+                  <li data-i18n="bowls.sauce5">Limette (frisch)</li>
+                  <li data-i18n="bowls.sauce6">Dunkle Soße</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="hausspezial" role="tabpanel" hidden>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.hs43.title">43. Sườn Chua Ngọt</span> <span class="menu-item-price">14,50&nbsp;€</span></h3><p data-i18n="item.hs43.desc">Vegane Stücke in süß-saurer Sauce mit Ananas &amp; Gemüse, dazu Reis</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.hs44.title">44. Tôm Chua Ngọt</span> <span class="menu-item-price">15,90&nbsp;€</span></h3><p data-i18n="item.hs44.desc">Vegane Garnelen in süß-saurer Sauce mit Ananas &amp; Gemüse, dazu Reis</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.hs47a.title">47a. Bún Nem Rán</span> <span class="menu-item-price">14,50&nbsp;€</span></h3><p data-i18n="item.hs47a.desc">Reisnudeln mit 3 knusprigen Frühlingsrollen, Koriander, Erdnuss &amp; frischer Limettensauce</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.hs47b.title">47b. Bún Chả</span> <span class="menu-item-price">14,50&nbsp;€</span></h3><p data-i18n="item.hs47b.desc">Reisnudeln mit Tofubällchen &amp; veganen Stücken in Limettensauce &amp; Koriander</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.hs48.title">48. Bánh Cuốn Nem Rán</span> <span class="menu-item-price">14,50&nbsp;€</span></h3><p data-i18n="item.hs48.desc">Gedämpfte Reismehlrollen mit 3 Frühlingsrollen, Koriander &amp; frischer Limettensauce</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.hs49.title">49. Vịt Sả Ớt</span> <span class="menu-item-price">15,90&nbsp;€</span></h3><p data-i18n="item.hs49.desc">Knusprige vegane Ente mit Zitronengras, Chili &amp; Gemüse, dazu Reis</p></article>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="allergen-note" data-i18n="menu.allergen">Allergene: 1 Glutenhaltiges Getreide · 2 Erdnüsse · 3 Soja · 4 Schalenfrüchte · 5 Sellerie · 6 Sesam — bitte sprechen Sie unser Team bei Unverträglichkeiten an.</p>
+      </div>
+
+      <!-- ===================== MITTAGSKARTE ===================== -->
+      <div class="menu-cat-panel" id="cat-mittagskarte" hidden>
+        <p class="menu-banner" data-i18n="mittagskarte.banner">Nur Mittwoch–Freitag, 11:00–16:00 Uhr</p>
+        <p class="menu-note" data-i18n="mittagskarte.note">Alle Vorspeisen sind zur Mittagszeit ebenfalls zum regulären Preis (5&nbsp;€) erhältlich.</p>
+
+        <div class="lunch-grid">
+          <article class="lunch-item">
+            <h3><span data-i18n="item.f19.title">19. Udon Xào</span> <span class="menu-item-price">9,50&nbsp;€</span></h3>
+            <p data-i18n="lunch.n19.variants">+ Tofu 11,50&nbsp;€ · + veganes Rind 11,50&nbsp;€ · + veganes Huhn 11,50&nbsp;€</p>
+          </article>
+          <article class="lunch-item">
+            <h3><span data-i18n="item.f21.title">21. Phở Xào</span> <span class="menu-item-price">9,50&nbsp;€</span></h3>
+            <p data-i18n="lunch.n21.variants">+ Tofu 11,50&nbsp;€ · + veganes Rind 11,50&nbsp;€ · + veganes Huhn 11,50&nbsp;€</p>
+          </article>
+          <article class="lunch-item">
+            <h3><span data-i18n="item.f22.title">22. Cơm Rang</span> <span class="menu-item-price">8,50&nbsp;€</span></h3>
+            <p data-i18n="lunch.n22.variants">+ Tofu 9,90&nbsp;€ · + veganes Rind 9,90&nbsp;€ · + veganes Huhn 9,90&nbsp;€</p>
+          </article>
+          <article class="lunch-item">
+            <h3><span data-i18n="item.f23.title">23. Mì Xào</span> <span class="menu-item-price">8,50&nbsp;€</span></h3>
+            <p data-i18n="lunch.n23.variants">+ Tofu 9,90&nbsp;€ · + veganes Rind 9,90&nbsp;€ · + veganes Huhn 9,90&nbsp;€</p>
+          </article>
+          <article class="lunch-item">
+            <h3><span data-i18n="item.n25.title">25. Phở</span> <span class="menu-item-price">10,90&nbsp;€</span></h3>
+            <p data-i18n="lunch.n25.variants">Wahlweise mit Tofu, veganem Rind oder veganem Huhn</p>
+          </article>
+          <article class="lunch-item">
+            <h3><span data-i18n="item.g36.title">36. Kohlrabi mit Tomaten</span> <span class="menu-item-price">9,90&nbsp;€</span></h3>
+            <p data-i18n="lunch.g36.variants">+ Tofu 11,50&nbsp;€ · + veganes Rind 11,50&nbsp;€</p>
+          </article>
+          <article class="lunch-item">
+            <h3><span data-i18n="item.g37.title">37. Pak Choi &amp; Shiitake</span> <span class="menu-item-price">9,90&nbsp;€</span></h3>
+            <p data-i18n="lunch.g37.variants">+ Tofu 11,50&nbsp;€ · + veganes Rind 11,50&nbsp;€</p>
+          </article>
+          <article class="lunch-item">
+            <h3><span data-i18n="item.g41.title">41. Rau Muống</span> <span class="menu-item-price">9,90&nbsp;€</span></h3>
+            <p data-i18n="lunch.g41.variants">+ Tofu 11,50&nbsp;€ · + veganes Rind 11,50&nbsp;€</p>
+          </article>
+          <article class="lunch-item">
+            <h3><span data-i18n="item.k13.title">13. Udon in Sauce nach Wahl</span> <span class="menu-item-price">9,50&nbsp;€</span></h3>
+            <p data-i18n="lunch.k13.variants">+ Tofu 11,50&nbsp;€ · + veganes Rind 11,50&nbsp;€ · + veganes Huhn 11,50&nbsp;€</p>
+          </article>
+          <article class="lunch-item">
+            <h3><span data-i18n="item.k32.title">32. Gebratenes Gemüse</span> <span class="menu-item-price">9,90&nbsp;€</span></h3>
+            <p data-i18n="lunch.k32.variants">Wahlweise mit Tofu, veganem Rind oder veganem Huhn, dazu gekochtem Reis</p>
+          </article>
+          <article class="lunch-item">
+            <h3><span data-i18n="lunch.bowl14.title">14. Vegane Beef-Bowl</span> <span class="menu-item-price">11,50&nbsp;€</span></h3>
+            <p data-i18n="lunch.bowl.desc">Mit Salatmix, Avocado, Gemüse, frischen Kräutern &amp; Sauce nach Wahl</p>
+          </article>
+          <article class="lunch-item">
+            <h3><span data-i18n="lunch.bowl15.title">15. Vegane Chicken-Bowl</span> <span class="menu-item-price">11,50&nbsp;€</span></h3>
+            <p data-i18n="lunch.bowl.desc">Mit Salatmix, Avocado, Gemüse, frischen Kräutern &amp; Sauce nach Wahl</p>
+          </article>
+          <article class="lunch-item">
+            <h3><span data-i18n="lunch.bowl17.title">17. Tofu-Bowl</span> <span class="menu-item-price">11,50&nbsp;€</span></h3>
+            <p data-i18n="lunch.bowl.desc">Mit Salatmix, Avocado, Gemüse, frischen Kräutern &amp; Sauce nach Wahl</p>
+          </article>
+        </div>
+
+        <p class="allergen-note" data-i18n="menu.allergen">Allergene: 1 Glutenhaltiges Getreide · 2 Erdnüsse · 3 Soja · 4 Schalenfrüchte · 5 Sellerie · 6 Sesam — bitte sprechen Sie unser Team bei Unverträglichkeiten an.</p>
+      </div>
+
+      <!-- ===================== GETRÄNKE ===================== -->
+      <div class="menu-cat-panel" id="cat-getraenke" hidden>
+
+        <div class="menu-tabs" role="tablist" aria-label="Getränke-Kategorien">
+          <button class="menu-tab is-active" role="tab" aria-selected="true" data-target="tee" data-i18n="menu.tab.tee">Tee &amp; Kaffee</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-target="alkoholfrei" data-i18n="menu.tab.alkoholfrei">Alkoholfreie Getränke</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-target="alkoholisch" data-i18n="menu.tab.alkoholisch">Alkoholische Getränke</button>
+        </div>
+
+        <div class="menu-panels">
+
+          <div class="menu-panel is-active" id="tee" role="tabpanel">
+            <h3 class="drink-subhead" data-i18n="drinks.vietKaffee">Viet Kaffee (wahlweise warm oder kalt)</h3>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.d.caphe.title">Cà Phê Đen</span> <span class="menu-item-price">4,00&nbsp;€</span></h3><p data-i18n="item.d.caphe.desc">Kräftiger schwarzer Kaffee</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.caphesua.title">Cà Phê Sữa</span> <span class="menu-item-price">4,20&nbsp;€</span></h3><p data-i18n="item.d.caphesua.desc">Mit gesüßter Kokos-Kondensmilch</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.kemmuoi.title">Kem Muối</span> <span class="menu-item-price">4,90&nbsp;€</span></h3><p data-i18n="item.d.kemmuoi.desc">Mit gesüßter Kokos-Kondensmilch &amp; cremigem Salzschaum</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.bacxiu.title">Bạc Xỉu</span> <span class="menu-item-price">4,90&nbsp;€</span></h3><p data-i18n="item.d.bacxiu.desc">Viel Milch, wenig Kaffee — mit gesüßter Kokos-Kondensmilch &amp; Hafermilch</p></article>
+            </div>
+            <h3 class="drink-subhead" data-i18n="drinks.espresso">Espresso Klassiker (mit Hafermilch)</h3>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.d.espresso.title">Espresso (warm)</span> <span class="menu-item-price">2,50&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.cappuccino.title">Cappuccino (warm)</span> <span class="menu-item-price">3,50&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.lattemacchiato.title">Latte Macchiato (warm)</span> <span class="menu-item-price">4,00&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.flatwhite.title">Flat White (warm)</span> <span class="menu-item-price">4,00&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.icedlatte.title">Iced Latte (kalt)</span> <span class="menu-item-price">4,00&nbsp;€</span></h3><p data-i18n="item.d.icedlatte.desc">Hafermilch mit Espresso &amp; Eiswürfeln</p></article>
+            </div>
+            <h3 class="drink-subhead" data-i18n="drinks.teeWarm">Tee (warm)</h3>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.d.gruenertee.title">Grüner Tee</span> <span class="menu-item-price">3,90&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.ingwertee.title">Frischer Ingwer-Tee</span> <span class="menu-item-price">3,50&nbsp;€</span></h3><p data-i18n="item.d.ingwertee.desc">Mit Minze oder Zitrone</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.maracujatee.title">Maracuja-Tee</span> <span class="menu-item-price">4,50&nbsp;€</span></h3><p data-i18n="item.d.maracujatee.desc">Mit Rohrzucker</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.yuzutee.title">Yuzu-Tee</span> <span class="menu-item-price">4,50&nbsp;€</span></h3><p data-i18n="item.d.yuzutee.desc">Mit Minze</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.jujube.title">Jujube-Goji-Tee</span> <span class="menu-item-price">4,50&nbsp;€</span></h3><p data-i18n="item.d.jujube.desc">Mit Chiasamen</p></article>
+            </div>
+            <h3 class="drink-subhead" data-i18n="drinks.matcha">Matcha Spezialitäten (kalt)</h3>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.d.vanillamatcha.title">Vanilla Matcha Latte</span> <span class="menu-item-price">4,50&nbsp;€</span></h3><p data-i18n="item.d.vanillamatcha.desc">Optional auch warm · mit Hafermilch</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.beeremangomatcha.title">Erdbeer/Mango Matcha</span> <span class="menu-item-price">5,00&nbsp;€</span></h3><p data-i18n="item.d.beeremangomatcha.desc">Mit Hafermilch</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.yuzumatcha.title">Yuzu Matcha Soda</span> <span class="menu-item-price">5,50&nbsp;€</span></h3></article>
+            </div>
+            <p class="menu-note" data-i18n="drinks.milkNote">*Auf Wunsch statt Hafermilch: Sojamilch, Mandelmilch</p>
+          </div>
+
+          <div class="menu-panel" id="alkoholfrei" role="tabpanel" hidden>
+            <h3 class="drink-subhead" data-i18n="drinks.limonade">Hausgemachte Limonade (0,4&nbsp;L)</h3>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.d.limette.title">Limette</span> <span class="menu-item-price">5,50&nbsp;€</span></h3><p data-i18n="item.d.limette.desc">Mit Rohrzucker &amp; Minze</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.salzlimette.title">Salz-Limette</span> <span class="menu-item-price">5,50&nbsp;€</span></h3><p data-i18n="item.d.salzlimette.desc">Mit Salz &amp; Minze</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.orangelimo.title">Orange</span> <span class="menu-item-price">5,50&nbsp;€</span></h3><p data-i18n="item.d.orangelimo.desc">Mit Rohrzucker &amp; Minze</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.maracujalimo.title">Maracuja</span> <span class="menu-item-price">5,50&nbsp;€</span></h3><p data-i18n="item.d.maracujalimo.desc">Mit Rohrzucker &amp; Minze</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.erdbeerlimo.title">Erdbeere</span> <span class="menu-item-price">5,50&nbsp;€</span></h3><p data-i18n="item.d.erdbeerlimo.desc">Mit Rohrzucker &amp; Minze</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.wassermelonelimo.title">Wassermelone</span> <span class="menu-item-price">5,50&nbsp;€</span></h3><p data-i18n="item.d.wassermelonelimo.desc">Nur im Sommer · mit Rohrzucker &amp; Minze</p></article>
+            </div>
+            <h3 class="drink-subhead" data-i18n="drinks.softdrinks">Soft Drinks</h3>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.d.wasser.title">Wasser still/sprudel (0,4&nbsp;L)</span> <span class="menu-item-price">3,00&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.cola.title">Cola (0,4&nbsp;L)</span> <span class="menu-item-price">3,50&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.sprite.title">Sprite (0,4&nbsp;L)</span> <span class="menu-item-price">3,50&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.fritzkola.title">Fritz-Kola (0,33&nbsp;L)</span> <span class="menu-item-price">3,90&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.bionade.title">Bionade (0,33&nbsp;L)</span> <span class="menu-item-price">3,90&nbsp;€</span></h3><p data-i18n="item.d.bionade.desc">Holunder, Ingwer-Orange oder Zitrone-Bergamotte</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.clubmate.title">Clubmate (0,5&nbsp;L)</span> <span class="menu-item-price">3,90&nbsp;€</span></h3></article>
+            </div>
+            <h3 class="drink-subhead" data-i18n="drinks.frischgepresst">Frisch gepresst</h3>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.d.orangensaft.title">Orangensaft (0,2&nbsp;L)</span> <span class="menu-item-price">3,90&nbsp;€</span></h3></article>
+            </div>
+            <h3 class="drink-subhead" data-i18n="drinks.smoothie">Smoothie &amp; Lassi (mit Hafermilch)</h3>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.d.sinhtobo.title">Sinh Tố Bơ (0,25&nbsp;L)</span> <span class="menu-item-price">3,90&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.avocadosmoothie.title">Avocado-Smoothie (0,4&nbsp;L)</span> <span class="menu-item-price">5,50&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.mangolassi.title">Mango-Lassi</span> <span class="menu-item-price">0,25L 3,90&nbsp;€ · 0,4L 5,50&nbsp;€</span></h3></article>
+            </div>
+            <h3 class="drink-subhead" data-i18n="drinks.saefte">Säfte &amp; Schorlen</h3>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.d.apfel.title">Apfelsaft/-schorle</span> <span class="menu-item-price">0,2L 2,90&nbsp;€ · 0,4L 4,50&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.mango.title">Mangosaft/-schorle</span> <span class="menu-item-price">0,2L 2,90&nbsp;€ · 0,4L 4,50&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.maracujasaft.title">Maracujasaft/-schorle</span> <span class="menu-item-price">0,2L 2,90&nbsp;€ · 0,4L 4,50&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.litschi.title">Litschisaft/-schorle</span> <span class="menu-item-price">0,2L 2,90&nbsp;€ · 0,4L 4,50&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.guave.title">Guavensaft/-schorle</span> <span class="menu-item-price">0,2L 2,90&nbsp;€ · 0,4L 4,50&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.banane.title">Bananensaft</span> <span class="menu-item-price">0,2L 2,90&nbsp;€ · 0,4L 4,50&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.kiba.title">KiBa</span> <span class="menu-item-price">0,2L 2,90&nbsp;€ · 0,4L 4,50&nbsp;€</span></h3></article>
+            </div>
+          </div>
+
+          <div class="menu-panel" id="alkoholisch" role="tabpanel" hidden>
+            <h3 class="drink-subhead" data-i18n="drinks.weinSekt">Wein &amp; Sekt (trocken, 0,2&nbsp;L)</h3>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.d.rotwein.title">Rotwein</span> <span class="menu-item-price">4,50&nbsp;€</span></h3><p data-i18n="item.d.rotwein.desc">Primitivo (Epicuro)</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.weisswein.title">Weißwein</span> <span class="menu-item-price">4,50&nbsp;€</span></h3><p data-i18n="item.d.weisswein.desc">Silvaner, Müller Thurgau oder Grauer Burgunder</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.rose.title">Rosé</span> <span class="menu-item-price">4,50&nbsp;€</span></h3><p data-i18n="item.d.rose.desc">Spätburgunder oder Saigner Rosé</p></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.sekt.title">Sekt</span> <span class="menu-item-price">3,90&nbsp;€</span></h3><p data-i18n="item.d.sekt.desc">Rotkäppchen</p></article>
+            </div>
+            <h3 class="drink-subhead" data-i18n="drinks.aperitif">Aperitif</h3>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.d.aperol.title">Aperol Spritz</span> <span class="menu-item-price">6,50&nbsp;€</span></h3></article>
+            </div>
+            <h3 class="drink-subhead" data-i18n="drinks.spirituosen">Spirituosen</h3>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.d.reisschnaps.title">Reisschnaps (2cl)</span> <span class="menu-item-price">2,90&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.jaeger.title">Jägermeister (4cl)</span> <span class="menu-item-price">3,50&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.ramazzotti.title">Ramazzotti Amaro (4cl)</span> <span class="menu-item-price">3,50&nbsp;€</span></h3></article>
+            </div>
+            <h3 class="drink-subhead" data-i18n="drinks.bier">Bier</h3>
+            <div class="menu-grid">
+              <article class="menu-item"><h3><span data-i18n="item.d.krostitzer.title">Ur-Krostitzer (0,5&nbsp;L)</span> <span class="menu-item-price">3,90&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.radler.title">Radler (0,5&nbsp;L)</span> <span class="menu-item-price">3,90&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.alkoholfreibier.title">Alkoholfreies Bier (0,5&nbsp;L)</span> <span class="menu-item-price">3,90&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.weizenbier.title">Weizenbier (0,5&nbsp;L)</span> <span class="menu-item-price">3,90&nbsp;€</span></h3></article>
+              <article class="menu-item"><h3><span data-i18n="item.d.saigonbier.title">Saigon Bier (0,4&nbsp;L)</span> <span class="menu-item-price">3,90&nbsp;€</span></h3><p data-i18n="item.d.saigonbier.desc">Vietnamesisches Bier</p></article>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===================== NACHTISCH ===================== -->
+      <div class="menu-cat-panel" id="cat-nachtisch" hidden>
+        <div class="menu-grid">
+          <article class="menu-item"><h3><span data-i18n="item.d60.title">60. Chuối Chiên</span> <span class="menu-item-price">5,50&nbsp;€</span></h3><p data-i18n="item.d60.desc">Frittierte Banane mit Agavensirup &amp; Mandeln</p></article>
+          <article class="menu-item"><h3><span data-i18n="item.d62.title">62. Xôi Xoài</span> <span class="menu-item-price">5,50&nbsp;€</span></h3><p data-i18n="item.d62.desc">Klebreis mit Mango &amp; Kokosmilch</p></article>
+          <article class="menu-item"><h3><span data-i18n="item.d63.title">63. Chè (wechselnd)</span> <span class="menu-item-price">5,90&nbsp;€</span></h3><p data-i18n="item.d63.desc">Vietnamesisches Dessert mit Kokosmilch &amp; Eiswürfeln (z.&nbsp;B. Bohnen, Tapioka, Jelly)</p></article>
+          <article class="menu-item"><h3><span data-i18n="item.d65.title">65. Bánh Bao (süß)</span> <span class="menu-item-price">5,00&nbsp;€</span></h3><p data-i18n="item.d65.desc">Gedämpfte Hefeteigtasche mit Mungbohnen &amp; Kokos</p></article>
+          <article class="menu-item"><h3><span data-i18n="item.d66.title">66. Pandan-Waffel</span> <span class="menu-item-price">6,00&nbsp;€</span></h3><p data-i18n="item.d66.desc">Frisch gebackene Waffel mit Pandan-Extrakt, Kokoscreme &amp; geröstetem Sesam</p></article>
+          <article class="menu-item"><h3><span data-i18n="item.d67.title">67. Mochi Eis</span> <span class="menu-item-price">4,50&nbsp;€</span></h3><p data-i18n="item.d67.desc">Japanisches Reisdessert mit Eisfüllung (verschiedene Sorten)</p></article>
+        </div>
+
+        <div class="dessert-glossary">
+          <p><strong data-i18n="glossary.cheTitle">Chè</strong> — <span data-i18n="glossary.cheDesc">Traditionelles vietnamesisches Dessert mit Kokosmilch &amp; Eiswürfeln, je nach Saison mit Bohnen, Tapioka oder Jelly</span></p>
+          <p><strong data-i18n="glossary.pandanTitle">Pandan</strong> — <span data-i18n="glossary.pandanDesc">Aromatische Pflanze aus Südostasien mit leicht nussigem, vanilleartigem Geschmack</span></p>
+          <p><strong data-i18n="glossary.mochiTitle">Mochi Eis</strong> — <span data-i18n="glossary.mochiDesc">Japanisches Reisdessert mit weicher Hülle und Eiscreme-Füllung</span></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section class="section reservation" id="reservation">
+    <div class="container reservation-grid">
+      <div class="reservation-info">
+        <p class="eyebrow" data-i18n="reservation.eyebrow">Reservierung</p>
+        <h2 data-i18n="reservation.title">Reservieren Sie Ihren Tisch</h2>
+        <p data-i18n="reservation.intro">Füllen Sie das Formular aus und wir bestätigen Ihre Reservierung schnellstmöglich per E-Mail oder Telefon.</p>
+        <ul class="info-list">
+          <li><strong data-i18n="reservation.addressLabel">Adresse:</strong> <span data-i18n="reservation.addressValue">Könneritzstraße 46, 04229 Leipzig (Schleußig)</span></li>
+          <li><strong data-i18n="reservation.phoneLabel">Telefon:</strong> <a href="tel:+493416440650">0341 60440650</a></li>
+          <li><strong data-i18n="reservation.hoursLabel">Öffnungszeiten:</strong> <span data-i18n="reservation.hoursValue">Mi–So 11:00–22:00 Uhr · Mo &amp; Di Ruhetag</span></li>
+        </ul>
+        <p class="reservation-hint" data-i18n="reservation.hint">Für Gruppen ab 8 Personen kontaktieren Sie uns bitte telefonisch. Reservierungen sind Mi–So möglich – Mo &amp; Di ist Ruhetag.</p>
+      </div>
+
+      <form class="reservation-form" id="reservationForm" novalidate>
+        <!-- Formspree config: replace YOUR_FORM_ID below, see README.md -->
+        <input type="hidden" name="_subject" value="Neue Tischreservierung – Mong Mo">
+        <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name" data-i18n="form.name">Name *</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-field">
+            <label for="guests" data-i18n="form.guests">Personenanzahl *</label>
+            <select id="guests" name="guests" required>
+              <option value="" data-i18n="form.guestsChoose">Bitte wählen</option>
+              <option data-i18n="form.guest1">1 Person</option>
+              <option data-i18n="form.guest2">2 Personen</option>
+              <option data-i18n="form.guest3">3 Personen</option>
+              <option data-i18n="form.guest4">4 Personen</option>
+              <option data-i18n="form.guest5">5 Personen</option>
+              <option data-i18n="form.guest6">6 Personen</option>
+              <option data-i18n="form.guest7">7 Personen</option>
+              <option data-i18n="form.guest8">8+ Personen (bitte anrufen)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="email" data-i18n="form.email">E-Mail *</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="form-field">
+            <label for="phone" data-i18n="form.phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="date" data-i18n="form.date">Datum *</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="form-field">
+            <label for="time" data-i18n="form.time">Uhrzeit *</label>
+            <input type="time" id="time" name="time" required min="11:00" max="21:30">
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="message" data-i18n="form.message">Anmerkungen (Allergien, besondere Wünsche)</label>
+          <textarea id="message" name="message" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-accent btn-block" id="submitBtn" data-i18n="form.submit">Reservierung anfragen</button>
+
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <p class="eyebrow" data-i18n="contact.eyebrow">Kontakt &amp; Anfahrt</p>
+        <h2 data-i18n="contact.title">Wir freuen uns auf Sie</h2>
+        <div class="rating-badge">
+          <span class="rating-stars">★★★★★</span>
+          <span class="rating-score">4.8</span>
+          <span class="rating-count" data-i18n="contact.ratingCount">(65 Bewertungen auf Google)</span>
+        </div>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <h3 data-i18n="contact.addressTitle">Adresse</h3>
+            <p>Könneritzstraße 46<br>04229 Leipzig (Schleußig)</p>
+          </div>
+          <div class="contact-card">
+            <h3 data-i18n="contact.contactTitle">Kontakt</h3>
+            <p><span data-i18n="contact.telPrefix">Tel:</span> <a href="tel:+493416440650">0341 60440650</a><br><span data-i18n="contact.emailPrefix">E-Mail:</span> [kontakt@mongmo-restaurant.de]</p>
+          </div>
+          <div class="contact-card">
+            <h3 data-i18n="contact.hoursTitle">Öffnungszeiten</h3>
+            <p><span data-i18n="contact.hoursLine1">Mi–So: 11:00–22:00 Uhr</span><br><span data-i18n="contact.hoursLine2">Montag &amp; Dienstag Ruhetag</span></p>
+          </div>
+          <div class="contact-card">
+            <h3 data-i18n="contact.serviceTitle">Service</h3>
+            <p data-i18n="contact.serviceText">✓ Vor Ort essen &nbsp; ✓ Zum Mitnehmen &nbsp; ✗ Lieferung &nbsp;·&nbsp; ca. 10–20&nbsp;€ pro Person</p>
+          </div>
+        </div>
+
+        <a class="btn btn-outline reviews-link" href="https://www.google.com/maps/search/?api=1&query=Mong+Mo+K%C3%B6nneritzstra%C3%9Fe+46+04229+Leipzig" target="_blank" rel="noopener" data-i18n="contact.reviewsLink">Alle Bewertungen auf Google ansehen</a>
+      </div>
+      <div class="map-embed">
+        <iframe
+          title="Mong Mo auf Google Maps"
+          src="https://www.google.com/maps?q=Mong+Mo,+K%C3%B6nneritzstra%C3%9Fe+46,+04229+Leipzig&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+        <a class="btn btn-accent map-route-btn" href="https://www.google.com/maps/dir/?api=1&destination=Mong+Mo+K%C3%B6nneritzstra%C3%9Fe+46+04229+Leipzig" target="_blank" rel="noopener" data-i18n="contact.routeBtn">Route planen</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo logo-light">Mong Mo</span>
+      <p data-i18n="footer.tagline">Vegane vietnamesische Küche</p>
+    </div>
+    <div class="footer-links">
+      <a href="#about" data-i18n="nav.about">Über uns</a>
+      <a href="#gallery" data-i18n="nav.gallery">Galerie</a>
+      <a href="#menu" data-i18n="nav.menu">Speisekarte</a>
+      <a href="#reservation" data-i18n="nav.reservation">Reservieren</a>
+      <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+    </div>
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram">IG</a>
+      <a href="#" aria-label="Facebook">FB</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Mong Mo. <span data-i18n="footer.copyright">Alle Rechte vorbehalten.</span></p>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
